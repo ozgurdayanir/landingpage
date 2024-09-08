@@ -20,23 +20,24 @@
     </style>
 </head>
 <body class="bg-neutral-100 text-neutral-900 px-24 lg:px-32 xl:px-40">
-    <header>
+    <header class="sticky top-0">
         <nav class="flex justify-between px-10 py-4 mt-4 bg-white items-center rounded shadow-sm">
             <div>
                 <img src="./logo/logoipsum-296.svg" alt="">
             </div>
             <div class="flex gap-6 items-center">
                 <div class="flex gap-3">
-                    <a href="#" class="text-md hover:text-sky-600 hover:font-bold">Link1</a>
-                    <a href="#" class="text-md hover:text-sky-600 hover:font-bold">Link2</a>
-                    <a href="#" class="text-md hover:text-sky-600 hover:font-bold">Link3</a>
+                    <a href="#about" class="text-md hover:text-sky-600 hover:font-bold">About Us</a>
+                    <a href="#services" class="text-md hover:text-sky-600 hover:font-bold">Services</a>
+                    <a href="#" class="text-md hover:text-sky-600 hover:font-bold">Contcat</a>
                 </div>
-                <button type="button" class="button bg-sky-600 text-white text-base px-4 py-2 rounded-full">Sign Up</button>
+                <button type="button" class="button bg-sky-600 text-white text-base px-4 py-2 rounded hover:bg-sky-800">Sign Up</button>
             </div>
         </nav>
     </header>
     <!--Header End-->
     <main>
+        <!--Hero section Start-->
         <section class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
             <div class="flex-col  bg-white px-10 py-8 gap-2 rounded text-center shadow-md">
                 <p class="text-sky-600 text-base font-medium ">Mamba Design System</p>
@@ -45,14 +46,97 @@
                 <form class="flex flex-col gap-4 mt-2 mb-4">
                     <input type="text" class="name border px-2 py-2 rounded" placeholder="Your name">
                     <input type="email" class="email border px-2 py-2 rounded" placeholder="Email address">
-                    <button type="button" class="flex-auto py-2 bg-sky-600 text-white text-center rounded">Join the waitlist</button>
+                    <button type="submit" class="flex-auto py-2 bg-sky-600 text-white text-center rounded hover:bg-sky-800">Join the waitlist</button>
                 </form>
             </div>
             <div class="lg:col-span-2 shadow-md">
+                <img class="w-full h-full rounded " src="https://picsum.photos/id/144/1080/480" alt="lorem picsum">
+            </div>
+        </section>
+
+        <!--Cards Start-->
+        <section class="mt-16">
+            <p class="text-center text-sky-600 text-sm tracking-widest">HOW IT WORKS</p>
+            <h2 class="text-center font-bold text-3xl mt-1 ">Building With Mamba is Simple</h2>
+            <div class="container mx-auto mt-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="card bg-white px-4 py-4 rounded">
+                    <span class="bg-sky-600 inline-flex w-10 h-10 mb-3 justify-center text-white items-center rounded-full">1</span>
+                    <p class="text-lg"> <b>Lorem ipsum,</b> rem ipsum dolor, sit amet consectetur dosrssa adipisicing elit.</p>
+                </div>
+                <div class="card bg-white px-4 py-4 rounded">
+                    <span class="bg-sky-600 inline-flex w-10 h-10 mb-3 justify-center text-white items-center rounded-full">2</span>
+                    <p class="text-lg"> <b>Lorem ipsum,</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, reiciendis cumque.</p>
+                </div>
+                <div class="card bg-white px-4 py-4 rounded">
+                    <span class="bg-sky-600 inline-flex w-10 h-10 mb-3 justify-center text-white items-center rounded-full">3</span>
+                    <p class="text-lg"> <b>Lorem ipsum,</b> dolor sit amet consectetur adipisicing elit. Quos, molestiae? Iusto, perferendis.</p>
+                </div>
+            </div>            
+        </section>
+
+        <!--Comments Slider Start-->
+        <section class="mt-10">
+            <div class="container grid grid-cols-1 md:grid-cols-2 gap-4">
                 <img class="w-full h-full rounded " src="https://picsum.photos/id/88/1080/480" alt="lorem picsum">
+                <div class="card bg-white rounded px-4 py-4 flex flex-col items-center gap-4">
+                    <img src="./img/34.jpg" alt="customer picture" class="w-10 h-10 rounded-full">
+                    <p class="italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligen sint itaque rem debitis!</p>
+                    <p class="text-sm font-light text-center">Gil Galad <span class="block">Ceo of Company Co.</span></p>
+                    
+                    <div class="flex items-center gap-1"> <!--carousel indicators-->
+                        <button type="button" class="w-2 h-2 bg-sky-600 rounded-full"></button>
+                        <button type="button" class="w-1.5 h-1.5 bg-neutral-300 rounded-full"></button>
+                        <button type="button" class="w-1.5 h-1.5 bg-neutral-300 rounded-full"></button>
+                        <button type="button" class="w-1.5 h-1.5 bg-neutral-300 rounded-full"></button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!--Services Start-->
+        <section class="mt-16" id="services">
+           <div class="container bg-white px-4 py-4 rounded">
+            <h2 class="text-3xl font-bold">Create with us</h2>
+            <p class="mt-4 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit culpa earum voluptatem, at unde id, dicta delectus ratione explicabo dolores eaque ea quisquam? In commodi necessitatibus asperiores quidem dolorum sequi, eaque molestias, veniam dignissimos, unde esse numquam nostrum autem iure eos? Velit alias in dicta iusto pariatur similique aspernatur dolor, explicabo esse distinctio sequi deserunt.</p>
+           </div>
+           <div class="container mt-16">
+                <div class="bg-white grid grid-cols-1 lg:grid-cols-3 rounded">
+                    <img class=" lg:col-span-2 w-full h-full rounded-t lg:rounded-none lg:rounded-l" src="https://picsum.photos/id/175/1080/480" alt="lorem picsum">
+                    <div class="px-4 py-4 flex flex-col justify-between">
+                        <div>
+                            <span class="bg-sky-600 text-white text-sm w-fit px-2 py-1 rounded-full">Business</span>
+                            <p class="mt-2 font-bold text-2xl">Curating a workplace that inspires team movement</p>
+                        </div>
+                        <p class="mt-10 font-light">November 30, 2024 <span class="block">By Gil Galad</span></p>
+                    </div>
+                </div>            
+           </div>
+        </section>
+
+        <!--About us Start-->
+        <section class="mt-16" id="about">
+            <div class="container flex flex-col mx-auto items-center bg-white px-4 py-6 rounded">
+                <h3 class="font-bold text-3xl">Our team is here to help you</h3>
+                <button class="font-light mt-4 flex justify-center items-center px-4 py-2 text-lg gap-3 hover:border-b-2 border-neutral-900 transition-all" type="button">Meet our crew <span class="material-symbols-outlined">
+                    arrow_forward
+                    </span></button>
+                <img class="w-full h-full rounded mt-10" src="https://picsum.photos/id/9/1080/480" alt="lorem picsum">
             </div>
         </section>
     </main>
+    <footer>
+        <div class="container flex justify-between bg-white mt-16 py-6 px-4 rounded mb-4">
+            <p>Mamba</p>
+            <div class="flex gap-2">
+                <span class="material-symbols-outlined">
+                    mail
+                </span>
+                <img class="w-6 h-6" src="./logo/github.svg" alt="github icon">
+                <img class="w-6 h-6" src="./logo/x-twitter.svg" alt="github icon">                
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
